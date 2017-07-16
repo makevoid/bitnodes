@@ -11,3 +11,13 @@ Please use with moderation, you don't really want to run many clients that open 
 Then copy the config generated in `bitnodes.txt` into your `bitcoin.conf`. Edit the script to use `sample()` instead of `sort()` if you just want to add some random nodes and not all of them.
 
 IP sources from `blockchain.info`
+
+##### Quick examples:
+
+Check how many open connections you have:
+
+    bitcoin-cli getinfo  | grep connections
+     
+Check how many different peers you are connected to:
+
+    bitcoin-cli getpeerinfo | grep subver | sort | uniq -c | sort -r
