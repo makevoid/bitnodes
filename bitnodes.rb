@@ -18,7 +18,7 @@ ips.sort!
 # if you plan to just use some then use sample:
 # ips = ips.sample
 
-# some good default configs (enable transaction indexing, increase max connection number and size of cache + memory pool)
+# some "good" default configs (enable transaction indexing, increase max connection number and size of cache + memory pool)
 head = "# bitcoin conf w/ mass forced addnode
 maxconnections=400
 txindex=1
